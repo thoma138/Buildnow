@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Tom Elliott">
+        <meta name="description" content="buildnow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        
+        </head>
+         <body>
+            <header>BUILDNOW</header>
+            <ul>
+                <li><a>About</a>
+                    <ul>
+                        <li>BUILDNOW is a calculator that<br>
+                            evaluates a rough estimate<br>
+                            of the cost of new home <br>
+                            builds in Australia 2022,<br>
+                            depending on the quality option <br>
+                            chosen and total square<br>
+                            metreage of the build.<br>
+                            There are four options to choose<br>
+                            from, Budget ($1300 per m²),<br>
+                            Value ($1900m²), Quality ($2400m²)<br>
+                            and Luxury ($3900m²).<br>
+                            Also displays the current<br>
+                            Australian Property Price Index<br>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="mailto:thomaselliott@live.com">Contact</a></li>
+      <table class="calc" border="1">
+          <tr>
+            <form>
+              <td>
+                  <select id="build-options">
+                   <option id="budget" value="1300">Budget</option>
+                   <option id="value" value="1900">Value</option>
+                   <option id="quality" value="2400">Quality</option>
+                   <option id="luxury" value="3900">Luxury</option>
+                  </select>
+              </td>
+              <td><input id="sqm-amount" type="text" placeholder="m²"></td>
+              <td><button id="calculate">Calculate</button></td>
+              <td>$</td>
+              <td><output id="result"></output></td>
+            </form>
+          </tr>   
+      </table>
+      <table class="property">
+          <tr>
+              <td>
+                  Australian Property Price Index:
+              </td>
+              <td id="data"></td>
+          </tr>
+      </table>
+      <script src="./main.js" async></script>
+        </body>
+</html>
